@@ -15,7 +15,7 @@ public class LeapCalculatorTests
         //Assert
         result.Should().Be(true);
     }
-
+    
     [Fact]
     public void IsLeapYear_given_divisble_by_100()
     {
