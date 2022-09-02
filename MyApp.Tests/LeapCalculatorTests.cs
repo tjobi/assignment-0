@@ -37,4 +37,18 @@ public class LeapCalculatorTests
 
         result.Should().Be(true);
     }
+
+    [Fact]
+    public void IsLeapYear_given_date_before_1582_throw_exception()
+    {
+        //arrange
+        const int YEAR = 1580;
+        var calculator = new LeapCalculator();
+
+        //act
+        Action result = () => calculator.IsLeapYear(YEAR);
+
+        //assert
+        result.Should().Throw<LeapYearTooEarlyException>();
+    }
 }
