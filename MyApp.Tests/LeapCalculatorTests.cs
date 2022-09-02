@@ -39,7 +39,7 @@ public class LeapCalculatorTests
     }
 
     [Fact]
-    public void IsLeapYear_given_date_before_1582()
+    public void IsLeapYear_given_date_before_1582_throw_exception()
     {
         //arrange
         const int YEAR = 1580;
