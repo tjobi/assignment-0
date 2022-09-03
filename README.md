@@ -1,2 +1,6 @@
-# assignment-0
-dis me assignment zero
+# tbru assignment-0
+
+## IsLeapYear Diagram
+
+![leapyearDiagram](./assignment0_diagram.jpeg)
+
